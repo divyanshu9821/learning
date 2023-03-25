@@ -14,3 +14,13 @@ struct Heap{
     int capacity; // size of array
     int heap_type; // min_heap or max_heap
 };
+
+// create heap
+Heap *create(int capacity, int heap_type){
+    Heap *h = new Heap(); // create a new heap
+    h->capacity = capacity; // set heap capacity
+    h->heap_type = heap_type; // set heap type
+    h->count = 0; // initalize count
+    h->array = new int[h->capacity]; // allocating memory to array = capacity
+    return h;
+}
