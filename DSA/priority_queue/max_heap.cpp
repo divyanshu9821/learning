@@ -30,3 +30,16 @@ int parent(Heap *h, int i){
     if(i<=0||h>=h->count) return -1;
     else return (i-1)/2;
 }
+
+// get children they will be at i*2+1, i*2+2
+int leftchild(Heap *h, int i){
+    int child = i*2+1;
+    if(child>=h->count) return -1;
+    return child;
+}
+
+int rightChild(Heap *h, int i){
+    int child = i*2+2;
+    if(child>=h->count) return -1;
+    return child;
+}
