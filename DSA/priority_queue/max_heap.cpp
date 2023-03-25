@@ -43,3 +43,9 @@ int rightChild(Heap *h, int i){
     if(child>=h->count) return -1;
     return child;
 }
+
+// get max element
+int max_ele(Heap *h){
+    if(h->count==0) return -1;
+    return h->array[0]; // root element of the heap or first element in the array
+}
