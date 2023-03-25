@@ -24,3 +24,9 @@ Heap *create(int capacity, int heap_type){
     h->array = new int[h->capacity]; // allocating memory to array = capacity
     return h;
 }
+
+// get parent of that node it will be at (i-1)/2
+int parent(Heap *h, int i){
+    if(i<=0||h>=h->count) return -1;
+    else return (i-1)/2;
+}
