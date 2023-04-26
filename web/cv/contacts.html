@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,viewport-fit=auto" />
+    <title>Contact Information</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    <h3>My contacts details</h3>
+    <p>
+      <img src="images/gmail.png" alt="GMail" height="30" />
+      singhaldivyanshu2001@gmail.com
+    </p>
+    <p>
+      <img src="images/linkedin.png" alt="LinkedIn" height="38" />
+      <a href="https://www.linkedin.com/in/divyanshu-singhal/"
+        >Divyanshu Singhal</a
+      >
+    </p>
+    <p>
+      <img src="images/location.jpeg" alt="Location" height="40" /> my-virtual-address
+      ;)
+    </p>
+    <p><a href="index.html">Back to Homepage</a></p>
+
+    <form
+      action="mailto:singhaldivyanshu2001@gmail.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <!--put url in 'action' to open that web page-->
+      <label>Name:</label>
+      <input type="text" name="your_name" value="" /><br /><!--textbox-->
+      <label>E-mail:</label>
+      <input type="email" name="your_email" value="" /><br /><!--textbox-->
+      <label>Message</label><br />
+      <textarea name="Message" id="" cols="32" rows="10"></textarea
+      ><br /><!--textarea-->
+      <input type="submit" /><!--submit button-->
+    </form>
+  </body>
+</html>
