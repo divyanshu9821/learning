@@ -34,9 +34,14 @@ void quick_sort(int arr[], int st, int en)
 
 int main()
 {
-
-    int arr[] = {5, 1, 2, 5, 4};
-    int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cout<<"Enter number of elements: "; cin>>n;
+    int arr[n];
+    cout<<"Enter "<<n<<" elements:= "<<endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin>>arr[i];
+    }
 
     quick_sort(arr, 0, n - 1);
     for (int i = 0; i < n; i++)

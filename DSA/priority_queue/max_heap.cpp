@@ -20,7 +20,7 @@ struct Max_heap
 // create heap
 Max_heap *create(int capacity)
 {
-    Max_heap *h = new Max_heap();            // create a new heap
+    Max_heap *h = new Max_heap();    // create a new heap
     h->capacity = capacity;          // set heap capacity
     h->count = 0;                    // initalize count
     h->array = new int[h->capacity]; // allocating memory to array = capacity
@@ -69,11 +69,11 @@ void swap(int *a, int *b)
 }
 
 // heapifying element - means make the tree follow the property of heap
-// two ways precolate down(use when removing element) or precolate up(when inserting element)
+// two ways, precolate down(use when removing element) or precolate up(when inserting element)
 void precolat_down(Max_heap *h, int i)
 {
     // till children bigger than element:
-    //     swap the element with the maximum of its childern
+    // swap the element with the maximum of its childern
     int l, r, max;
     l = left_child(h, i);
     r = right_Child(h, i);
