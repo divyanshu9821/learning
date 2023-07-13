@@ -90,6 +90,22 @@ avlNode *insertion(avlNode *root, int data)
     return root;
 }
 
+void inOrder(avlNode *root){
+    if(!root){
+        return;
+    }
+    inOrder(root->left);
+    cout<<root->data<<" ";
+    inOrder(root->right);
+}
+
 int main(){
-    
+    int arr[] = {4,5,6,7,1,3,2};
+    int arrLen = sizeof(arr)/sizeof(int);
+    avlNode *newTree = NULL;
+    for(int i = 0;i<arrLen;i++){
+        newTree = insertion(newTree,arr[i]);
+    }
+
+    inOrder(newTree);
 }
