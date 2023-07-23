@@ -126,6 +126,7 @@ void insert(Max_heap *h, int ele){
     h->count++;
     int i;
     i = h->count-1;
+    // prelocating up
     while(i>=0&&h->array[parent(h,i)]<ele){
         h->array[i] = h->array[parent(h,i)];
         i = parent(h,i);

@@ -35,6 +35,8 @@ avlNode *single_rotate_left(avlNode *root)
     return child;
 }
 
+// rotate right child clockwise
+// then rotate itself anticlockwise
 avlNode *double_rotate_right(avlNode *root)
 {
     root->right = single_rotate_left(root->right);
@@ -42,6 +44,8 @@ avlNode *double_rotate_right(avlNode *root)
     return root;
 }
 
+// rotate left child anticlockwise
+// then rotate itself clockwise 
 avlNode *double_rotate_left(avlNode *root)
 {
     root->left = single_rotate_right(root->left);
