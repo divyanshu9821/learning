@@ -8,7 +8,7 @@ void dfs(bool **adj, int u, int V, bool *visited)
     // mark the current vertex as true means we have visisted
     visited[u] = true;
     // process the current vertex here we simply printing
-    cout << u << endl;
+    cout << u << " ";
     // for every connected vertex to the current vertex
     for (int v = 0; v < V; v++)
     {
@@ -36,7 +36,7 @@ void bfs(bool **adj, int u, int V)
         // marks that vertex visited means true
         visited[u] = true;
         // process the vertex
-        cout << u << endl;
+        cout << u << " ";
         // well dequeue is not in stl so here it removes the vertex from the queue
         q.pop();
         // for every connected vertex to the current vertex
@@ -47,6 +47,8 @@ void bfs(bool **adj, int u, int V)
             {
                 // enqueue the vertex
                 q.push(v);
+                // marks that vertex visited means true
+                visited[v] = true;
             }
         }
     }
@@ -87,12 +89,20 @@ int main()
     adj[5][4] = true;
     adj[6][4] = true;
 
-    // bfs(adj,0,v);
+    // for(int i = 0;i<v;i++){
+    //     for(int j = 0;j<v;j++){
+    //         cout<<adj[i][j]<<" ";
+    //     }
+    //     cout<<endl;
+    // }
 
     bool *visited = new bool[v];
     for (int i = 0; i < v; i++)
     {
         visited[i] = false;
     }
-    dfs(adj, 0, v, visited);
+
+    bfs(adj, 2, v);
+    cout << endl;
+    dfs(adj, 2, v, visited);
 }
