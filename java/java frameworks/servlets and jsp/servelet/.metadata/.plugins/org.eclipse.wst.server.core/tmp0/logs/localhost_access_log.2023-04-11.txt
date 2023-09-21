@@ -1,0 +1,6 @@
+127.0.0.1 - - [11/Apr/2023:11:07:02 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [11/Apr/2023:11:07:04 +0530] "GET /DemoApp/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Apr/2023:11:07:07 +0530] "GET /favicon.ico HTTP/1.1" 404 762
+0:0:0:0:0:0:0:1 - - [11/Apr/2023:11:07:09 +0530] "GET /DemoApp/adding?num1=12&num2=2 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [11/Apr/2023:11:07:09 +0530] "GET /DemoApp/squareServlet?keyyy=14 HTTP/1.1" 200 27
+0:0:0:0:0:0:0:1 - - [11/Apr/2023:11:07:24 +0530] "GET /DemoApp/squareServlet?keyyy=14 HTTP/1.1" 200 27

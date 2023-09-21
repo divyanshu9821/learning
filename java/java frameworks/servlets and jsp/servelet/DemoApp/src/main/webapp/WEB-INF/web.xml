@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>DemoApp</display-name>
+	
+	<!-- servlet-name in servlet tag and corresponding servlet-mapping tag must 
+		be same -->
+	<!-- <servlet>
+		<servlet-name>first</servlet-name>
+		<servlet-class>first.packag.AddingUsingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>first</servlet-name>
+		<url-pattern>/adding</url-pattern> '/' is mandatory, adding is action defined in the from tag in html file
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>second</servlet-name>
+		<servlet-class>first.packag.squareUsingServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>second</servlet-name>
+		<url-pattern>/squareServlet</url-pattern>
+	</servlet-mapping> -->
+	
+	
+	<!-- instead of using deployment descriptor to map the url with servlet we can use annotation-->
+</web-app>
